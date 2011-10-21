@@ -1,0 +1,105 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                "Pmap_select" = id; 
+                "Qmap_select" = id; 
+                Stokeslength = id; 
+                "Tmap_select" = id; 
+                "Umap_select" = id; 
+                "choose_render_mode" = id; 
+                "color_matrix" = id; 
+                genStokes = id; 
+                "linlog_matrix" = id; 
+                readFile = id; 
+                renderAndSave = id; 
+                saveImage = id; 
+                setHistMax = id; 
+                setHistMin = id; 
+                showAboutPanel = id; 
+                showPreferencePanel = id; 
+                showStokes = id; 
+                updateColors = id; 
+                "zoom_level" = id; 
+            }; 
+            CLASS = AppController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                FITSfilename = NSTextField; 
+                Numofpixels = NSTextField; 
+                "Nval_here" = NSTextField; 
+                "Phival_here" = NSTextField; 
+                Pmapbutton = NSButton; 
+                "Pval_here" = NSTextField; 
+                Qmapbutton = NSButton; 
+                "Qval_here" = NSTextField; 
+                Stokesslider = NSSlider; 
+                "Thetaval_here" = NSTextField; 
+                Tmapbutton = NSButton; 
+                "Tval_here" = NSTextField; 
+                Umapbutton = NSButton; 
+                "Uval_here" = NSTextField; 
+                "Zoom_slider" = NSSlider; 
+                "color_matrix" = NSMatrix; 
+                "color_matrix_HSV" = NSButtonCell; 
+                "color_matrix_grey" = NSButtonCell; 
+                "drawer_text" = NSTextView; 
+                genStokesbutton = NSButton; 
+                "linlog_matrix" = NSMatrix; 
+                myCMBdata = CMBdata; 
+                myLittleOpenGLview = LittleOpenGLview; 
+                myOpenGLview = OpenGLview; 
+                myWindow = NSWindow; 
+                progressView = NSProgressIndicator; 
+                "progress_status_text" = NSTextField; 
+                "render_mode_matrix" = NSMatrix; 
+                showStokesbutton = NSButton; 
+                updatebutton = NSButton; 
+                "widget_max" = NSTextField; 
+                "widget_min" = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = CMBdata; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                myAppController = AppController; 
+                myLittleOpenGLview = LittleOpenGLview; 
+                myOpenGLview = OpenGLview; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = LittleOpenGLview; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {myAppController = AppController; myCMBdata = CMBdata; }; 
+            SUPERCLASS = NSOpenGLView; 
+        }, 
+        {
+            CLASS = OpenGLview; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {myAppController = AppController; myCMBdata = CMBdata; }; 
+            SUPERCLASS = NSOpenGLView; 
+        }, 
+        {
+            ACTIONS = {changeBackgroundColor = id; changeTextureLevel = id; }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                colorWell = NSColorWell; 
+                "num_texels" = NSTextField; 
+                "texture_index" = NSStepper; 
+                "texture_level" = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

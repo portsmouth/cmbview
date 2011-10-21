@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {CLASS = AboutView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = CMBviewAboutPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {aboutView = AboutView; }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = MyPanel; LANGUAGE = ObjC; SUPERCLASS = NSPanel; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,10 @@
+CMBview Installation
+====================
+
+The source code is provided as an Xcode 2.2.1 project. To compile the
+project you will first have to install the CFITSIO and hpic
+libraries, available at: 
+
+http://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+http://cmb.phys.cwru.edu/hpic/
+

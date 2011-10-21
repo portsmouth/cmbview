@@ -1,0 +1,25 @@
+
+Version 0.2.2 (April 10 2006)
+
+- Allowed ctrl-trackpad to emulate right mouse click.
+  Bug noted by Eric Aubourg.
+
+Version 0.2.1 (Mar 18 2006)
+
+- Allowed loading of 4-map WMAP polarization files (and removed
+  crashing bug if >4 maps in the file). Fixed bug where view window
+  border color changes.
+
+Version 0.2 (Nov 15 2005)
+
+- Many new features...
+	
+Version 0.1.1 (Aug 8 2005)
+
+- Disabled close button on main window, to prevent application crashing 
+  on attempting to open a file after closing the main window.
+  Bug noted by Andrew Jaffe.
+	
+Version 0.1 (Aug 7 2005)
+
+- First release
